@@ -1,7 +1,16 @@
+body{
+  background-color: rgb(209, 206, 206);;
+  margin: 0%;
+}
+div
+{
+font-family:'Montserrat', sans-serif;
+}
+
 .fondo{
     background-color: cornflowerblue;
     height: 70px;
-    width: auto;
+    width: 100%;
 }
   .fondo-img{
     height: 30px;
@@ -21,20 +30,35 @@
     margin: 20px;
     margin-right: 60px; 
 }
+.datos-personales{
+  width: auto;
+  margin: 50px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: grey;
+  border-width:thin thick;
+  padding: 20px;
+}
   .perfil-img{
     width: 200px;
     height: 200px;
-    margin-left: 80px;
-    margin-right: 20px;
-    margin-top: 30px;
+    margin: auto;
+    margin-left: 50px;
     border-radius: 50%;
     border: 3px solid cornflowerblue;
     padding: 3px;
 }
-  .datos-personales{
-    display: flex;
+  .informacion
+  {
+    display: inline-block;
     font-size: 16px;
-    line-height: 0.9;
+    line-height: 0,05px;
+    content: inherit;
+    margin: auto;
+    margin-left:20px ;
+    width: 67%;
+
+  
 }
   .boton-seguir{
     background-color: cornflowerblue; /* Color de fondo del botón */
@@ -45,6 +69,32 @@
     outline: none; /* Quita el contorno al hacer clic */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     float: right;
-    margin: -30px;
-    margin-right: 100px; 
+    margin: 20px;
+    
 }
+.publicacion{
+  float: left;
+  width: 45%;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: grey;
+  border-width:thin thick;
+  padding: 20px;
+  }
+  .ciudad-img{
+    object-fit: cover;
+    width:100%;
+  }
+
+.sobremi{
+  float: right;
+  width: 40%;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: grey;
+  border-width:thin thick;
+  padding: 20px;
+  }
+

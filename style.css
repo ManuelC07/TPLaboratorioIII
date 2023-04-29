@@ -1,0 +1,50 @@
+.fondo{
+    background-color: cornflowerblue;
+    height: 70px;
+    width: auto;
+}
+  .fondo-img{
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 80px;
+}
+  .fondo-button{
+    background-color:white; /* Color de fondo del botón */
+    color: cornflowerblue; /* Color del texto del botón */
+    border-radius: 10px; /* Redondea los bordes del botón */
+    padding: 8px 12px; /* Espacio alrededor del texto del botón */
+    border: none; /* Quita el borde del botón */
+    outline: none; /* Quita el contorno al hacer clic */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    float: right;
+    margin: 20px;
+    margin-right: 60px; 
+}
+  .perfil-img{
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 3px solid cornflowerblue;
+    padding: 3px;
+}
+  .datos-personales{
+    display: flex;
+    font-size: 16px;
+    line-height: 0.9;
+}
+  .boton-seguir{
+    background-color: cornflowerblue; /* Color de fondo del botón */
+    color:white; /* Color del texto del botón */
+    border-radius: 10px; /* Redondea los bordes del botón */
+    padding: 12px 24px; /* Espacio alrededor del texto del botón */
+    border: none; /* Quita el borde del botón */
+    outline: none; /* Quita el contorno al hacer clic */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    float: right;
+    margin: -30px;
+    margin-right: 100px; 
+}

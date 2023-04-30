@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <link href="style.css" rel="stylesheet">
-	<link href="codigo.js">
+	<link href="codi.js">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -22,13 +22,13 @@
 			<p><strong>Fecha de Nacimiento:</strong>  01/05/1996 </p>
 			<p><strong>Teléfono:</strong>  918-936-9585 </p> 
 			<p><strong>Ciudad:</strong> Tokyo, Japón </p> 
-			Trabajando en Lawn N <button class="boton-seguir">Seguir</button>	
+			Trabajando en Lawn N <button class="boton-seguir" id="follow-button">Seguir</button><script src="codi.js"></script>	
 		</div>
 	</div>
 	<div class="publicacion">
 		<STROng style="color:grey">publicado hace 1 semana...</STROng> 
 		<img src="Tokyo.jpg" class="ciudad-img">
-		<button class="megusta" >Me gusta</button> <p align=right><strong>202</strong> me gusta</p>
+		<button class="megusta" onclick="incrementLikes()">Me gusta</button><p align=right><span id="numLikes"><strong>200</strong></span> Me gusta</p>
 		<p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
 		
 		<div class="comentarios">
@@ -37,9 +37,9 @@
 			<p><strong>Edna Krabappel</strong> ¡guau! que lindo... te extraño💖💖 </p>
 		</div>
 		<input class="Coment-INPUT" type=text placeholder="Ingresa tu comentario...">
-		<input class="enviar-btn" type=submit value="enviar">
+		<button class="enviar-btn">Comentar</button>
 	</div>
-	
+
 	<div class="sobremi">
 		<h3 style="color: grey;">Sobre mí</h3>
 		<p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibreante y emocionate ciudad de Tokio, Japón. Me encanta copturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.  </p>

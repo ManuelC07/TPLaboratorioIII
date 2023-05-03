@@ -1,6 +1,3 @@
-
-const user= document.getElementById("username").value;
-
 const followButton = document.getElementById('follow-button');
 
 followButton.addEventListener('click', function() {
@@ -23,4 +20,36 @@ function incrementLikes() {
   } 
 };
 
+function agregarComentario() {
+  // Obtener los valores de los inputs
+  var usuario = document.getElementById("usuario").value;
+  var comentario = document.getElementById("comentario").value;
 
+  // Verificar si el usuario ingresó ambos datos
+  if (usuario === "" || comentario === "") {
+    alert("Por favor ingresa tu nombre de usuario y deja un comentario");
+    return;
+  }
+
+  // Crear un nuevo elemento de comentario y agregarlo al contenedor
+  var contenedor = document.getElementById("contenedor-comentarios");
+
+  var nuevoComentario = document.createElement("div");
+  nuevoComentario.classList.add("comentario");
+
+  var nombreUsuario = document.createElement("span");
+  nombreUsuario.classList.add("nombre-usuario");
+  nombreUsuario.textContent = usuario;
+
+  var textoComentario = document.createElement("span");
+  textoComentario.classList.add("texto-comentario");
+  textoComentario.textContent = comentario;
+
+  nuevoComentario.appendChild(nombreUsuario);
+  nuevoComentario.appendChild(textoComentario);
+  contenedor.appendChild(nuevoComentario);
+
+  // Limpiar los inputs
+  document.getElementById("usuario").value = "";
+  document.getElementById("comentario").value = "";
+};

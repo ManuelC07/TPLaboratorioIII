@@ -1,11 +1,16 @@
 
+const user= document.getElementById("username").value;
+
 const followButton = document.getElementById('follow-button');
 
 followButton.addEventListener('click', function() {
   if (followButton.textContent === 'Seguir') {
     followButton.textContent = 'Dejar de seguir';
+    followButton.style.backgroundColor = "#808080";
+    
   } else {
     followButton.textContent = 'Seguir';
+    followButton.style.backgroundColor ="#6495ed";
   }
 });
 
@@ -19,21 +24,3 @@ function incrementLikes() {
 };
 
 
-function agregarComentario(evento) {
-  evento.preventDefault();
-  //Obtengo los valores ingresados
-  let usuario = document.getElementById('username').value;
-  let textoComentario = document.getElementById('texto-comentario').value;
-  //Agrego el feedback a la página
-  let texto = document.createTextNode(usuario  + ': ' +  textoComentario);
-  let parrafo = document.createElement('p')
-  parrafo.appendChild(texto);
-
-  document.getElementById('comentarios').appendChild(parrafo);
-
-  //Reinicio los valores de los input
-  document.getElementById('texto-comentario').value = '';
-}
-
-document.getElementById('boton-enviar-comentario')
-  .addEventListener('click', agregarComentario)

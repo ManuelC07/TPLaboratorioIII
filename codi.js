@@ -12,9 +12,12 @@ followButton.addEventListener('click', function() {
 var likes = 200;
 
 function incrementLikes() {
-  likes++;
+  if (likes==200){
+    likes++;
   document.getElementById("numLikes").innerHTML = likes;
+  } 
 };
+
 
 function agregarComentario(evento) {
   evento.preventDefault();

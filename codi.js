@@ -17,15 +17,18 @@ function incrementLikes() {
   if (likes==200){
     likes++;
   document.getElementById("numLikes").innerHTML = likes;
-  } 
-};
+  } else
+  likes--;
+  document.getElementById("numLikes").innerHTML = likes;
+}
+  
+
 
 function agregarComentario() {
-  // Obtener los valores de los inputs
+
   var usuario = document.getElementById("usuario").value;
   var comentario = document.getElementById("comentario").value;
 
-  // Verificar si el usuario ingresó ambos datos
   if (usuario === "" || comentario === "") {
     alert("Por favor ingresa tu nombre de usuario y deja un comentario");
     return;
@@ -39,7 +42,7 @@ function agregarComentario() {
 
   var nombreUsuario = document.createElement("span");
   nombreUsuario.classList.add("nombre-usuario");
-  nombreUsuario.textContent = usuario;
+  nombreUsuario.textContent = usuario + ": ";
 
   var textoComentario = document.createElement("span");
   textoComentario.classList.add("texto-comentario");
@@ -49,7 +52,6 @@ function agregarComentario() {
   nuevoComentario.appendChild(textoComentario);
   contenedor.appendChild(nuevoComentario);
 
-  // Limpiar los inputs
   document.getElementById("usuario").value = "";
   document.getElementById("comentario").value = "";
 };

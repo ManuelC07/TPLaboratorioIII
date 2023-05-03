@@ -9,13 +9,13 @@ body{
     height: 70px;
     width: 100%;
 }
-  .fondo-img{
+.fondo-img{
     height: 30px;
     width: 100px;
     margin: 20px;
     margin-left: 80px;
 }
-  .fondo-INPUT{
+.fondo-INPUT{
     background-color:white; /* Color de fondo del botón */
     color: cornflowerblue; /* Color del texto del botón */
     border-radius: 10px; /* Redondea los bordes del botón */
@@ -28,15 +28,15 @@ body{
     margin-right: 60px; 
 }
 .datos-personales{
-  width: auto;
-  margin: 50px;
-  background-color: white;
-  border-radius: 10px;
-  border-color: grey;
-  border-width:thin thick;
-  padding: 20px;
+    width: auto;
+    margin: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: grey;
+    border-width:thin thick;
+    padding: 20px;
 }
-  .perfil-img{
+.perfil-img{
     width: 200px;
     height: 200px;
     margin: auto;
@@ -45,8 +45,7 @@ body{
     border: 3px solid #6495ed;
     padding: 3px;
 }
-  .informacion
-  {
+.informacion{
     display: inline-block;
     font-size: 16px;
     line-height: 0,05px;
@@ -54,8 +53,6 @@ body{
     margin: auto;
     margin-left:20px ;
     width: 67%;
-
-  
 }
   .boton-seguir{
     background-color: cornflowerblue; /* Color de fondo del botón */
@@ -67,28 +64,33 @@ body{
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     float: right;
     margin: 20px;
-    
+}
+.boton-seguir:hover{
+  border-color: cornflowerblue;
+  border-width: 3px;
+  border-style:ridge;
+  transition: all 0.1s ease;
 }
 .publicacion{
-  float: left;
-  width: 45%;
-  line-height: 0,05px;
-  margin-left: 50px;
-  margin-right: 10px; ;
-  background-color: white;
-  border-radius: 10px;
-  border-color: grey;
-  border-width:thin thick;
-  padding: 20px;
+    float: left;
+    width: 45%;
+    line-height: 0,05px;
+    margin-left: 50px;
+    margin-right: 10px; ;
+    background-color: white;
+    border-radius: 10px;
+    border-color: grey;
+    border-width:thin thick;
+    padding: 20px;
 
   }
-  .ciudad-img{
+.ciudad-img{
     object-fit: cover;
     width:100%;
     border-radius: 10px;
     margin-top: 15px;
   }
-  .megusta{
+.megusta{
     background-color:cornflowerblue; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border-radius: 10px; /* Redondea los bordes del botón */
@@ -98,10 +100,15 @@ body{
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     float: left;
     margin: 5px;
-    
   }
+.megusta:hover{
+    border-color: cornflowerblue;
+    border-width: 3px;
+    border-style:ridge;
+    transition: all 0.1s ease;}
+
 .Coment-INPUT{
-  background-color:rgb(233, 230, 230);
+    background-color:rgb(233, 230, 230);
     color: rgb(122, 120, 120); 
     border: none;
     font-size: 16px;
@@ -115,7 +122,7 @@ body{
     
 }
 .enviar-btn{
-  background-color:cornflowerblue; /* Color de fondo del botón */
+    background-color:cornflowerblue; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border-radius: 10px; /* Redondea los bordes del botón */
     padding: 8px 12px; /* Espacio alrededor del texto del botón */
@@ -125,17 +132,24 @@ body{
     float: right;
     margin: 5px;
     font-size: 16px;
+    
 }
+.enviar-btn:hover{
+    border-color: cornflowerblue;
+    border-width: 3px;
+    border-style:ridge;
+    transition: all 0.1s ease;
+  }
 .sobremi{
-  float: right;
-  width:40%; 
-  margin-left: 10px;
-  margin-right: 50px;
-  margin-top: 0%;
-  background-color: white;
-  border-radius: 10px;
-  border-color: grey;
-  border-width:thin thick;
-  padding: 20px;
+    float: right;
+    width:40%; 
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 0%;
+    background-color: white;
+    border-radius: 10px;
+    border-color: grey;
+    border-width:thin thick;
+    padding: 20px;
   }
 

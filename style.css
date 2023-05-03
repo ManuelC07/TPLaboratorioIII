@@ -2,10 +2,7 @@ body{
   background-color: rgb(209, 206, 206);;
   margin: 0%;
 }
-div
-{
-font-family:'Montserrat', sans-serif;
-}
+*{font-family:'Montserrat', sans-serif;}
 
 .fondo{
     background-color: cornflowerblue;

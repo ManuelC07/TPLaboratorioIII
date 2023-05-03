@@ -28,18 +28,22 @@
 	<div class="publicacion">
 		<STROng style="color:grey">publicado hace 1 semana...</STROng> 
 		<img src="Tokyo.jpg" class="ciudad-img">
-		<button class="megusta" onclick="incrementLikes()">Me gusta</button><p align=right><span id="numLikes"><strong>200</strong></span> Me gusta</p>
+		<button class="megusta" onclick="incrementLikes()">Me gusta</button><p align=right><strong><span id="numLikes">200</strong></span> Me gusta</p>
 		
 		<div class="comentarios">
 			<STROng style="color:grey">Comentarios:</STROng>
-			<div id="div">
-			  <p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
-			  <p><strong>Moe Szyslak:</strong> ¡que belleza!👏 </p>
-			  <p><strong>Edna Krabappel</strong> ¡guau! que lindo... te extraño💖
+			<div id="comentarios">
+				<p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
+				<p><strong>Moe Szyslak:</strong> ¡que belleza!👏 </p>
+				<p><strong>Edna Krabappel</strong> ¡guau! que lindo... te extraño💖
+
 			</div>
+			<form>
+            <label><textarea placeholder="ingresa tu comentario..." id="texto-comentario" class="Coment-INPUT"></textarea></label>
+			<input id="boton-enviar-comentario" type="submit" value="Enviar" class="enviar-btn">
+			</form>
 		</div>
-		<input class="Coment-INPUT" id="comment" type=text placeholder="Ingresa tu comentario...">
-		<button class="enviar-btn" id="btn-comentario">Comentar</button><script src="codi.js"></script>
+		
 	</div>
 
 	<div class="sobremi">

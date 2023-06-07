@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div class="fondo">
@@ -24,16 +25,23 @@
 			<p><strong>Fecha de Nacimiento:</strong>  01/05/1996 </p>
 			<p><strong>Teléfono:</strong>  918-936-9585 </p> 
 			<p><strong>Ciudad:</strong> Tokyo, Japón </p> 
-			Trabajando en Lawn N <button class="boton-seguir" id="follow-button">Seguir</button><script src="codi.js"></script>	
+			Trabajando en Lawn N 
+			<div id="seguir">
+		      <button class="boton-seguir" @click="toggleFollow">
+				{{ following ? 'Dejar de seguir' : 'Seguir' }}</button>
+			</div>
 		</div>
 	</div>
 	<div class="publicacion">
 		<STROng style="color:grey">publicado hace 1 semana...</STROng> 
 		<img src="Tokyo.jpg" class="ciudad-img">
-		<button class="megusta" onclick="incrementLikes()">Me gusta</button><p align=right><strong><span id="numLikes">200</strong></span> Me gusta</p>
+        <div id="likeboton">
+		  <button class="megusta" @click="like" :disabled="liked">Me gusta</button>
+		  <p align="right">{{ likes }} likes</p>
+		</div>
 		
 		<div class="comentarios">
-			<p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
+			<br><p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
 			 <strong style="color:#808080">Comentarios:</strong>
 			<div id="coment">
 				
@@ -55,5 +63,5 @@
 		<h3 style="color: grey;">Sobre mí</h3>
 		<p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibreante y emocionate ciudad de Tokio, Japón. Me encanta copturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.  </p>
 	</div>
-
+    <script src="codi.js"></script>
 </body>

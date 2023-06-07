@@ -1,28 +1,30 @@
-const followButton = document.getElementById('follow-button');
-
-followButton.addEventListener('click', function() {
-  if (followButton.textContent === 'Seguir') {
-    followButton.textContent = 'Dejar de seguir';
-    followButton.style.backgroundColor = "#808080";
-    
-  } else {
-    followButton.textContent = 'Seguir';
-    followButton.style.backgroundColor ="#6495ed";
+new Vue({
+  el: '#seguir',
+  data: {
+    following: false
+  },
+  methods: {
+    toggleFollow() {
+      this.following = !this.following;
+    }
   }
 });
 
-var likes = 200;
-
-function incrementLikes() {
-  if (likes==200){
-    likes++;
-  document.getElementById("numLikes").innerHTML = likes;
-  } else
-  likes--;
-  document.getElementById("numLikes").innerHTML = likes;
-}
-  
-
+new Vue({
+  el: '#likeboton',
+  data: {
+    likes: 200,
+    liked: false,
+  },
+  methods: {
+    like() {
+      if (!this.liked) {
+        this.likes++;
+        this.liked = true;
+      }
+    },
+  },
+});
 
 function agregarComentario() {
 

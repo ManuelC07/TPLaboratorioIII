@@ -1,11 +1,24 @@
+
 new Vue({
   el: '#seguir',
   data: {
-    following: false
+    siguiendo: false,
+    Estado: "seguir",
+    color: 'cornflowerblue'
   },
   methods: {
-    toggleFollow() {
-      this.following = !this.following;
+    seguir() {
+      if (this.siguiendo == false){
+      this.siguiendo = !this.siguiendo;
+      this.Estado = "dejar de seguir"
+      this.color = 'grey'
+
+      }
+      else{
+        this.Estado = "seguir"
+        this.siguiendo = false
+        this.color = 'cornflowerblue'
+      }
     }
   }
 });

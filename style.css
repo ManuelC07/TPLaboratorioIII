@@ -16,13 +16,13 @@ body{
     margin-left: 80px;
 }
 .fondo-INPUT{
-    background-color:white; /* Color de fondo del botón */
-    color: cornflowerblue; /* Color del texto del botón */
-    border-radius: 10px; /* Redondea los bordes del botón */
-    padding: 8px 12px; /* Espacio alrededor del texto del botón */
-    border: none; /* Quita el borde del botón */
-    outline: none; /* Quita el contorno al hacer clic */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color:white;
+    color: cornflowerblue;
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
     float: right;
     margin: 20px;
     margin-right: 60px; 
@@ -55,21 +55,15 @@ body{
     width: 67%;
 }
   .boton-seguir{
-    background-color: cornflowerblue; /* Color de fondo del botón */
-    color:white; /* Color del texto del botón */
-    border-radius: 10px; /* Redondea los bordes del botón */
-    padding: 12px 24px; /* Espacio alrededor del texto del botón */
-    border: none; /* Quita el borde del botón */
-    outline: none; /* Quita el contorno al hacer clic */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color: cornflowerblue; 
+    color:white; 
+    border-radius: 10px; 
+    padding: 12px 24px; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
     float: right;
     margin: 20px;
-}
-.boton-seguir:hover{
-  border-color: cornflowerblue;
-  border-width: 3px;
-  border-style:ridge;
-  transition: all 0.1s ease;
 }
 .publicacion{
     float: left;
@@ -91,13 +85,13 @@ body{
     margin-top: 15px;
   }
 .megusta{
-    background-color:cornflowerblue; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border-radius: 10px; /* Redondea los bordes del botón */
-    padding: 8px 12px; /* Espacio alrededor del texto del botón */
-    border: none; /* Quita el borde del botón */
-    outline: none; /* Quita el contorno al hacer clic */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color:cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
     float: left;
     margin: 5px;
   }
@@ -122,13 +116,13 @@ body{
     
 }
 .enviar-btn{
-    background-color:cornflowerblue; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border-radius: 10px; /* Redondea los bordes del botón */
-    padding: 8px 12px; /* Espacio alrededor del texto del botón */
-    border: none; /* Quita el borde del botón */
-    outline: none; /* Quita el contorno al hacer clic */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color:cornflowerblue; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
     float: right;
     margin: 5px;
     font-size: 16px;

@@ -36,8 +36,8 @@
 		<STROng style="color:grey">publicado hace 1 semana...</STROng> 
 		<img src="Tokyo.jpg" class="ciudad-img">
         <div id="likeboton">
-		  <button class="megusta" @click="like" :disabled="liked">Me gusta</button>
-		  <p align="right">{{ likes }} likes</p>
+		  <button class="megusta" @click="incrementar">Me gusta</button>
+		  <p align="right">{{contador}} Me Gusta</p>
 		</div>
 		
 		<div class="comentarios">

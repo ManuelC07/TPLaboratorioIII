@@ -13,17 +13,17 @@ new Vue({
 new Vue({
   el: '#likeboton',
   data: {
-    likes: 200,
-    liked: false,
+    contador :200
   },
   methods: {
-    like() {
-      if (!this.liked) {
-        this.likes++;
-        this.liked = true;
+    incrementar: function() {
+      if (this.contador === 200) {
+        this.contador++;
+      } else if (this.contador === 201) {
+        this.contador--;
       }
-    },
-  },
+    }
+  }
 });
 
 function agregarComentario() {

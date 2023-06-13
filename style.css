@@ -146,4 +146,19 @@ body{
     border-width:thin thick;
     padding: 20px;
   }
-
+  .comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .nombre {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .contenido {
+    flex-grow: 1;
+    margin-right: 10px;
+  }

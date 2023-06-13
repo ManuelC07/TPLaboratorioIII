@@ -142,19 +142,22 @@ body{
     border-radius: 10px;
     padding: 20px;
   }
-  .comentario {
+.comentario {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-  }
+}
   
-  .nombre {
+.nombre {
     font-weight: bold;
     margin-right: 10px;
-  }
+ }
   
-  .contenido {
+.contenido {
     flex-grow: 1;
     margin-right: 10px;
-  }
+ }
+.boton-eliminar{
+  background-color: red;
+}

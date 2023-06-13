@@ -40,27 +40,19 @@ new Vue({
 });
 
 new Vue({
-  el: '#comentarios',
-  props: {
-    usuario:{
-        type: String,
-        required: true,
-    },
-  },
-  data() {
-    return {
-      usuario: '',
-      comentario: '',
-      error: '',
-      comentarios: []
-    };
+  el: '#commentboton',
+  data: {
+    usuario: '',
+    comentario: '',
+    comentarios: [],
+    error: ''
   },
   methods: {
     comentar() {
-      if (!this.usuario) {
-        this.error = 'Debes ingresar un usuario';
-      } else if (!this.comentario) {
-        this.error = 'Debes ingresar un comentario';
+      if (this.usuario === '') {
+        this.error = 'ALERTA-Debes ingresar un Usuario';
+      } else if (this.comentario === '') {
+        this.error = 'ALERTA-Debes ingresar un Comentario';
       } else {
         this.comentarios.push({
           usuario: this.usuario,

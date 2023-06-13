@@ -101,7 +101,7 @@ body{
     border-style:ridge;
     transition: all 0.1s ease;}
 
-.Coment-INPUT{
+.comentinput{
     background-color:rgb(233, 230, 230);
     color: rgb(122, 120, 120); 
     border: none;
@@ -137,13 +137,9 @@ body{
 .sobremi{
     float: right;
     width:40%; 
-    margin-left: 10px;
-    margin-right: 50px;
-    margin-top: 0%;
+    margin: auto;
     background-color: white;
     border-radius: 10px;
-    border-color: grey;
-    border-width:thin thick;
     padding: 20px;
   }
 

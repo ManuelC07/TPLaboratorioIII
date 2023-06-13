@@ -1,8 +1,5 @@
 
 app.components('comentarios', {
-    props: {
-        usuario=this.usuario
-    },
     template:
     /*html*/
     `<form class="cajacoments" @submit.prevent="onSubmit">

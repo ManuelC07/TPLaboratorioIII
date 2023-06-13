@@ -13,7 +13,7 @@
 	<div id="app">
 		<div class="fondo">
 			<img src="https://i.imgur.com/Qx8uR89.png" class="fondo-img">
-			<input class="fondo-INPUT" type="text" v-model="usuario" id="usuario" placeholder="ingresa tu usuario..." >
+			<label id="usuario"><input class="fondo-INPUT" type="text" v-model="usuario" name="usuario" placeholder="Ingresa tu usuario..." ></label>
 			
 		</div>
 		<div class="datos-personales">
@@ -40,13 +40,27 @@
 			<p align="right">{{contador}} Me Gusta</p>
 			</div>
 			
-			<div class="comentarios">
+			<div class="comentarios" id="comentarios">
 				<br><p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
 				<strong style="color:#808080">Comentarios:</strong>
-				<cometarios></cometarios>
-				<cometarios></cometarios>
-				<cometarios></cometarios>
+				<div>
+					
+					<p><strong>Moe Szyslak:</strong> ¡que belleza!👏 </p>
+					<p><strong>Edna Krabappel:</strong> ¡guau! que lindo... te extraño💖
+					<div id="comentario"v-for="(comentario, index) in comentarios" :key="index" class="comentario">
+						<p class="nombre">{{ comentario.usuario }}</p>
+                        <p class="contenido">{{ comentario.contenido }}</p>
+                        <button @click="eliminarComentario(index)">Eliminar</button>
+					</div>
 
+				</div>
+				<div>
+				<label id="textocoment"><input type="text" v-model="comentario" name="comentario" placeholder="Ingresa tu comentario..." class="Coment-INPUT"></label>
+				</div>
+
+				<button id="commentboton" class="enviar-btn" @click="comentar">Comentar</button>
+				<p id="error" v-if="error" style="color: red;">{{ error }}</p>
+			</div>
 		</div>
 
 

@@ -12,19 +12,17 @@
 		<div class="encabezado">
 			<img src="https://i.imgur.com/Qx8uR89.png" class="fondo-img">
 			<label id="usuario"><input @preventclick class="fondo-INPUT" name="usuario" type="text" v-model="usuario" placeholder="Ingresa tu usuario..." ></label>
-			
 		</div>
 		<div class="datos-personales">
-			
 			<img src="https://i.imgur.com/99qgQJy.jpeg" class="perfil-img">
 			
 			<div class="informacion">
-					<h1>Jane Doe</h1>
-					<p><strong>Email:</strong> jane_doe@email.com </p>
-					<p><strong>Fecha de Nacimiento:</strong>  01/05/1996 </p>
-					<p><strong>Teléfono:</strong>  918-936-9585 </p> 
-					<p><strong>Ciudad:</strong> Tokyo, Japón </p> 
-					Trabajando en Lawn N 
+				<h1>Jane Doe</h1>
+				<p><strong>Email:</strong> jane_doe@email.com </p>
+				<p><strong>Fecha de Nacimiento:</strong>  01/05/1996 </p>
+				<p><strong>Teléfono:</strong>  918-936-9585 </p> 
+				<p><strong>Ciudad:</strong> Tokyo, Japón </p> 
+				Trabajando en Lawn N 
 				<div id="seguir">
 					<button class="boton-seguir" @click="seguir" :style="{ background: color }">{{Estado}} </button>
 				</div>
@@ -35,36 +33,33 @@
 			<img src="Tokyo.jpg" class="ciudad-img">
 			<div id="likeboton">
 				<button class="megusta" @click="incrementar">Me gusta</button>
-				<p align="right"><strong>{{contador}}</strong> Me Gusta</p>
+				<p class="contador"><strong>{{contador}}</strong> Me Gusta</p>
 			</div>
 			
 			<div class="comentarios">
 				<br><p><strong>Jane Doe: </strong> ¡noche lluviosa en Tokio!😍😍😍</p>
 				<strong style="color:#808080">Comentarios:</strong>
 				<div>
-					
 					<p><strong>Moe Szyslak:</strong> ¡que belleza!👏 </p>
 					<p><strong>Edna Krabappel:</strong> ¡guau! que lindo... te extraño💖
-						
+					<div v-for="(comentario, index) in comentarios" :key="index" class="comentario">
+						<p class="nombre"><strong>{{ comentario.usuario +': ' }}</strong> </p>
+						<p class="contenido">{{ comentario.contenido }}</p>
+						<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
+					</div>
 					<div>
-						<div v-for="(comentario, index) in comentarios" :key="index" class="comentario">
-							<p class="nombre"><strong>{{ comentario.usuario +': ' }}</strong> </p>
-							<p class="contenido">{{ comentario.contenido }}</p>
-							<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
-						</div>
-					<div>
-							<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="comentInput"></label>
-							<button class="enviar-btn" @click="comentar">Comentar</button>
-							<p id="error" style="color: red;">{{ error }}</p>
+						<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="comentInput"></label>
+						<button class="enviar-btn" @click="comentar">Comentar</button>
+						<p id="error" style="color: red;">{{ error }}</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="sobremi">
-		<h3 style="color: grey;">Sobre mí</h3>
-		<p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibreante y emocionate ciudad de Tokio, Japón. Me encanta copturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.  </p>
-	</div>
+		<div class="sobremi">
+			<h3 style="color: grey;">Sobre mí</h3>
+			<p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibreante y emocionate ciudad de Tokio, Japón. Me encanta copturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.  </p>
+		</div>
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="codi.js"></script>
 	<script src="./components/comentarios.js"></script>

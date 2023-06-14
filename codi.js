@@ -13,7 +13,7 @@ const app = Vue.createApp({
   },
   methods: {
     seguir() {
-      if (this.siguiendo == false){
+      if (this.siguiendo === false){
       this.siguiendo = !this.siguiendo;
       this.Estado = "Dejar de Seguir"
       this.color = 'rgb(171, 182, 204)'

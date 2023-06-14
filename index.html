@@ -35,7 +35,7 @@
 			<img src="Tokyo.jpg" class="ciudad-img">
 			<div id="likeboton">
 				<button class="megusta" @click="incrementar">Me gusta</button>
-				<p align="right"><strong>{{contador}}</strong> Me Gusta</p>
+				<p class="contador"><strong>{{contador}}</strong> Me Gusta</p>
 			</div>
 			
 			<div class="comentarios">
@@ -46,16 +46,15 @@
 					<p><strong>Moe Szyslak:</strong> ¡que belleza!👏 </p>
 					<p><strong>Edna Krabappel:</strong> ¡guau! que lindo... te extraño💖
 						
+					<div v-for="(comentario, index) in comentarios" :key="index" class="comentario">
+						<p class="nombre"><strong>{{ comentario.usuario +': ' }}</strong> </p>
+						<p class="contenido">{{ comentario.contenido }}</p>
+						<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
+					</div>
 					<div>
-						<div v-for="(comentario, index) in comentarios" :key="index" class="comentario">
-							<p class="nombre"><strong>{{ comentario.usuario +': ' }}</strong> </p>
-							<p class="contenido">{{ comentario.contenido }}</p>
-							<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
-						</div>
-					<div>
-							<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="comentInput"></label>
-							<button class="enviar-btn" @click="comentar">Comentar</button>
-							<p id="error" style="color: red;">{{ error }}</p>
+						<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="comentInput"></label>
+						<button class="enviar-btn" @click="comentar">Comentar</button>
+						<p id="error" style="color: red;">{{ error }}</p>
 					</div>
 				</div>
 			</div>

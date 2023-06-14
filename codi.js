@@ -1,14 +1,15 @@
-new Vue({
-  el: '#app',
-  data: {
-    siguiendo: false,
-    Estado: "Seguir",
-    color: 'cornflowerblue',
-    contador :200,
-    usuario: '',
-    comentario: '',
-    comentarios: [],
-    error: ''
+const app = Vue.createApp({
+  data() {
+    return{
+      siguiendo: false,
+     Estado: "Seguir",
+     color: 'cornflowerblue',
+     contador :200,
+     usuario: '',
+     comentario: '',
+     comentarios: [],
+     error: ''
+    };
   },
   methods: {
     seguir() {
@@ -50,3 +51,4 @@ new Vue({
     }
   }
 });
+app.mount('#app');

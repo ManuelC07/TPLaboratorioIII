@@ -48,7 +48,7 @@
 						
 					<div>
 						<div v-for="(comentario, index) in comentarios" :key="index" class="comentario">
-							<p class="nombre"><strong>{{ crearComentario }}</strong> </p>
+							<p class="nombre"><strong>{{ comentario.usuario }}</strong> </p>
 							<p class="contenido">{{ comentario.contenido }}</p>
 							<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
 						</div>

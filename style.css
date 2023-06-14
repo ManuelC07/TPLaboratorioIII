@@ -95,6 +95,9 @@ body{
     float: left;
     margin: 5px;
   }
+.contador{
+  box-align: right;
+}
 .comentInput{
     background-color:rgb(233, 230, 230);
     color: rgb(122, 120, 120); 

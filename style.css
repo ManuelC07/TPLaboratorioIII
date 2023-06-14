@@ -96,7 +96,8 @@ body{
     margin: 5px;
   }
 .contador{
-  box-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 .comentInput{
     background-color:rgb(233, 230, 230);

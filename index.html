@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="app">
-		<div class="fondo">
+		<div class="encabezado">
 			<img src="https://i.imgur.com/Qx8uR89.png" class="fondo-img">
 			<label id="usuario"><input @preventclick class="fondo-INPUT" name="usuario" type="text" v-model="usuario" placeholder="Ingresa tu usuario..." ></label>
 			
@@ -52,21 +52,18 @@
 							<p class="contenido">{{ comentario.contenido }}</p>
 							<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
 						</div>
-						<div>
+					<div>
 							<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="comentInput"></label>
 							<button class="enviar-btn" @click="comentar">Comentar</button>
 							<p id="error" style="color: red;">{{ error }}</p>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
-		<div class="sobremi">
-			<h3 style="color: grey;">Sobre mí</h3>
-			<p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibreante y emocionate ciudad de Tokio, Japón. Me encanta copturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.  </p>
-		</div>
+	</div>
+	<div class="sobremi">
+		<h3 style="color: grey;">Sobre mí</h3>
+		<p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibreante y emocionate ciudad de Tokio, Japón. Me encanta copturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.  </p>
 	</div>
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="codi.js"></script>

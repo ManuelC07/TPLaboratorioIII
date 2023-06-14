@@ -101,7 +101,7 @@ body{
     border-style:ridge;
     transition: all 0.1s ease;}
 
-.comentinput{
+.comentInput{
     background-color:rgb(233, 230, 230);
     color: rgb(122, 120, 120); 
     border: none;

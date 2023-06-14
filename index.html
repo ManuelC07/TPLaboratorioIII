@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<div id="commentboton">
+	<div id="app">
 		<div class="fondo">
 			<img src="https://i.imgur.com/Qx8uR89.png" class="fondo-img">
 			<label id="usuario"><input class="fondo-INPUT" name="usuario" type="text" v-model="usuario" placeholder="Ingresa tu usuario..." ></label>
@@ -53,7 +53,7 @@
 							<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
 						</div>
 						<div>
-							<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="Coment-INPUT"></label>
+							<label id="comentario"><input name="comentario" type="text" v-model="comentario" placeholder="Ingresa tu comentario..." class="comentInput"></label>
 							<button class="enviar-btn" @click="comentar">Comentar</button>
 							<p id="error" style="color: red;">{{ error }}</p>
 						</div>

@@ -1,10 +1,15 @@
 
 new Vue({
-  el: '#seguir',
+  el: '#app',
   data: {
     siguiendo: false,
     Estado: "Seguir",
-    color: 'cornflowerblue'
+    color: 'cornflowerblue',
+    contador :200,
+    usuario: '',
+    comentario: '',
+    comentarios: [],
+    error: ''
   },
   methods: {
     seguir() {
@@ -19,35 +24,15 @@ new Vue({
         this.siguiendo = false
         this.color = 'cornflowerblue'
       }
-    }
-  }
-});
-
-new Vue({
-  el: '#likeboton',
-  data: {
-    contador :200
-  },
-  methods: {
+   
+    },
     incrementar: function() {
       if (this.contador === 200) {
         this.contador++;
       } else if (this.contador === 201) {
         this.contador--;
       }
-    }
-  }
-});
-
-new Vue({
-  el: '#commentboton',
-  data: {
-    usuario: '',
-    comentario: '',
-    comentarios: [],
-    error: ''
-  },
-  methods: {
+    },
     comentar() {
       if (this.usuario === '') {
         this.error = 'ALERTA-Debes ingresar un Usuario';

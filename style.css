@@ -93,14 +93,8 @@ body{
     outline: none;
     cursor: pointer;
     float: left;
-    margin: 5px;
-  }
-.megusta:hover{
-    border-color: cornflowerblue;
-    border-width: 3px;
-    border-style:ridge;
-    transition: all 0.1s ease;}
 
+  }
 .comentInput{
     background-color:rgb(233, 230, 230);
     color: rgb(122, 120, 120); 
@@ -128,12 +122,6 @@ body{
     font-size: 16px;
     
 }
-.enviar-btn:hover{
-    border-color: cornflowerblue;
-    border-width: 3px;
-    border-style:ridge;
-    transition: all 0.1s ease;
-  }
 .sobremi{
     float: right;
     width:40%; 
@@ -159,5 +147,14 @@ body{
     margin-right: 10px;
  }
 .boton-eliminar{
-  background-color: red;
+    background-color:rgb(171, 182, 204); 
+    color: rgb(250, 57, 57); 
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    float: right;
+    margin: 5px;
+    font-size: 16px;
 }

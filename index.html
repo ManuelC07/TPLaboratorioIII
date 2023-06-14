@@ -11,7 +11,7 @@
 	<div id="app">
 		<div class="fondo">
 			<img src="https://i.imgur.com/Qx8uR89.png" class="fondo-img">
-			<label id="usuario"><input class="fondo-INPUT" name="usuario" type="text" v-model="usuario" placeholder="Ingresa tu usuario..." ></label>
+			<label id="usuario"><input @preventclick class="fondo-INPUT" name="usuario" type="text" v-model="usuario" placeholder="Ingresa tu usuario..." ></label>
 			
 		</div>
 		<div class="datos-personales">
@@ -19,14 +19,14 @@
 			<img src="https://i.imgur.com/99qgQJy.jpeg" class="perfil-img">
 			
 			<div class="informacion">
-				<h1>Jane Doe</h1>
-				<p><strong>Email:</strong> jane_doe@email.com </p>
-				<p><strong>Fecha de Nacimiento:</strong>  01/05/1996 </p>
-				<p><strong>Teléfono:</strong>  918-936-9585 </p> 
-				<p><strong>Ciudad:</strong> Tokyo, Japón </p> 
-				Trabajando en Lawn N 
+					<h1>Jane Doe</h1>
+					<p><strong>Email:</strong> jane_doe@email.com </p>
+					<p><strong>Fecha de Nacimiento:</strong>  01/05/1996 </p>
+					<p><strong>Teléfono:</strong>  918-936-9585 </p> 
+					<p><strong>Ciudad:</strong> Tokyo, Japón </p> 
+					Trabajando en Lawn N 
 				<div id="seguir">
-				<button class="boton-seguir" @click="seguir" :style="{ background: color }">{{Estado}} </button>
+					<button class="boton-seguir" @click="seguir" :style="{ background: color }">{{Estado}} </button>
 				</div>
 			</div>
 		</div>
@@ -34,8 +34,8 @@
 			<STROng style="color:grey">publicado hace 1 semana...</STROng> 
 			<img src="Tokyo.jpg" class="ciudad-img">
 			<div id="likeboton">
-			<button class="megusta" @click="incrementar">Me gusta</button>
-			<p align="right">{{contador}} Me Gusta</p>
+				<button class="megusta" @click="incrementar">Me gusta</button>
+				<p align="right"><strong>{{contador}}</strong> Me Gusta</p>
 			</div>
 			
 			<div class="comentarios">
@@ -48,7 +48,7 @@
 						
 					<div>
 						<div v-for="(comentario, index) in comentarios" :key="index" class="comentario">
-							<p class="nombre">{{ comentario.usuario }}</p>
+							<p class="nombre"><strong>{{ crearComentario }}</strong> </p>
 							<p class="contenido">{{ comentario.contenido }}</p>
 							<button class="boton-eliminar" @click="eliminarComentario(index)">Eliminar</button>
 						</div>

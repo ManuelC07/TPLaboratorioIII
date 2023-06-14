@@ -1,4 +1,3 @@
-
 new Vue({
   el: '#app',
   data: {
@@ -16,15 +15,13 @@ new Vue({
       if (this.siguiendo == false){
       this.siguiendo = !this.siguiendo;
       this.Estado = "Dejar de Seguir"
-      this.color = 'grey'
-
+      this.color = 'rgb(171, 182, 204)'
       }
       else{
         this.Estado = "Seguir"
         this.siguiendo = false
         this.color = 'cornflowerblue'
       }
-   
     },
     incrementar: function() {
       if (this.contador === 200) {
@@ -35,16 +32,14 @@ new Vue({
     },
     comentar() {
       if (this.usuario === '') {
-        this.error = 'ALERTA-Debes ingresar un Usuario';
+        this.error = '¡Debe ingresar un Usuario!';
       } else if (this.comentario === '') {
-        this.error = 'ALERTA-Debes ingresar un Comentario';
+        this.error = '¡Debe ingresar un comentario!';
       } else {
         this.comentarios.push({
           usuario: this.usuario,
           contenido: this.comentario
         });
-
-        // Limpiar los campos
         this.usuario = '';
         this.comentario = '';
         this.error = '';
